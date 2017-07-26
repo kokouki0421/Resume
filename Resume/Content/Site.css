@@ -1,0 +1,26 @@
+﻿body {
+    font-family:微軟正黑體;
+}
+
+#indexBody {
+
+}
+
+    #indexBody img {
+        height:auto;
+        width:100%;
+    }
+
+    #indexBody input {
+        border-radius:25%;
+        position:relative;
+        background-color:black;
+        opacity:.5;
+    }
+    #indexBody input::before {
+        content:"";
+        position:absolute;
+        border-radius: 25%;
+        z-index:1;
+        color:black;
+    }
