@@ -1,26 +1,59 @@
 ﻿body {
-    font-family:微軟正黑體;
+    margin: 0;
+    font-family: 微軟正黑體;
 }
 
 #indexBody {
-
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000 url(/Images/sun-2445461_1920.jpg) center center fixed no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
-    #indexBody img {
-        height:auto;
-        width:100%;
+    #indexBody .indexText1 {
+        position: absolute;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        top: 25%;
+        margin-left: 15%;
     }
 
-    #indexBody input {
-        border-radius:25%;
-        position:relative;
-        background-color:black;
-        opacity:.5;
+    #indexBody .indexText2 {
+        position: absolute;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        top: 40%;
+        margin-left: 22%;
     }
-    #indexBody input::before {
-        content:"";
-        position:absolute;
-        border-radius: 25%;
-        z-index:1;
-        color:black;
+
+    #indexBody #indexBtns {
+        position: relative;
+        margin-left:10%;
+        top: 65%;
     }
+        #indexBody #indexBtns .indexBtn {
+            border-radius: 50%;
+            width: 160px;
+            height: 160px;
+            border: none;
+            outline: none;
+            font-size: 28px;
+            z-index: 999999;
+            margin-right: 30px;
+            opacity: .6;
+            font-weight: bold;
+            background-color: dimgray;
+            color: white;
+        }
+
+            #indexBody #indexBtns .indexBtn:hover {
+                cursor: pointer;
+                background-color: lightgray;
+                color: black;
+            }
