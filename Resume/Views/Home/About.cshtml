@@ -1,36 +1,59 @@
 ﻿
-@{
-    Layout = null;
-}
 <link href="~/Content/Site.css" rel="stylesheet" />
-<!DOCTYPE html>
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-    <title>About</title>
-</head>
-<body>
-    <div id="aboutBody">
-        <div class="main-memu">
-            <ul>
-                <li><a href="/Home/Index">首頁</a></li>
-                <li><a href="#">關於辜黃琦</a></li>
-                <li><a href="#">自傳</a></li>
-                <li><a href="#">作品集</a></li>
-            </ul>
-        </div>
-        <div><img /></div>
-        <div class="profile">基本資料</div>
-        <div class="profile-content">
+}
 
-        </div>
-        <div class="education">學習經歷</div>
-        <div class="education-content"></div>
-        <div class="work">工作經歷</div>
-        <div class="work-content"></div>
-        <div class="skill">技能與證照</div>
-        <div class="skill-content"></div>
-        </div>
-</body>
-</html>
+@*<div id="aboutBody">
+    <div><img /></div>*@
+<div class="profile animated fadeInDown">基本資料</div>
+<div class="profile-content">
+    <ul>
+        <li>姓名：辜黃琦</li>
+        <li>E-mail：kokouki0421@gmail.com</li>
+        <li>電話：0922551207</li>
+    </ul>
+</div>
+<div class="education animated fadeInDown">學習經歷</div>
+<div class="education-content">
+    <ul>
+        <li>私立中華大學　應用日語學系　<br>2013年09月-2017年06月</li>
+        <li><a href="https://www.build-school.com/">Build-School</a>軟體實作培訓班　<br>2017年02月-2017年07月</li>
+        <li>私立聖心女子中學　<br>2011年09月-2013年6月</li>
+        <hr>
+        <li>應日系系學會　擔任資訊長、文書長　<br>2015年05月-2016年06月</li>
+        <li>聯合四系迎新　擔任活動長　<br>2015年07月-2015年10月</li>
+    </ul>
+</div>
+<div class="work animated fadeInDown">工作經歷</div>
+<div class="work-content">
+    <ul>
+        <li>NuPasta杯杯麵　外場服務生　<br>2014年07月-2015年04月</li>
+        <li>SOGO日本食品展　銷售員兼翻譯　<br>2016年12月15日-12月26日</li>
+    </ul>
+</div>
+<div class="skill animated fadeInDown">技能與證照</div>
+<div class="skill-content">
+    <ul>
+        <li>日本語能力測驗JLPT　N2</li>
+        <li>TQC企業人才技能認證　<br>PowerPoint實用級</li>
+    </ul>
+</div>
+@*</div>*@
+
+@section scripts{
+
+    <script>
+        $('.profile').click(function () {
+            $('.profile-content').slideToggle();
+        }); $('.education').click(function () {
+            $('.education-content').slideToggle();
+        }); $('.work').click(function () {
+            $('.work-content').slideToggle();
+        }); $('.skill').click(function () {
+            $('.skill-content').slideToggle();
+        });
+    </script>
+}
