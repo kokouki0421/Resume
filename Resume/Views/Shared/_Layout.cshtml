@@ -13,17 +13,14 @@
         <div class="main-memu">
             <ul>
                 <li><a href="/Home/Index">首頁</a></li>
-                <li><a href="#">關於辜黃琦</a></li>
-                <li><a href="#">自傳</a></li>
-                <li><a href="#">作品集</a></li>
+                <li><a href="/Home/About">關於辜黃琦</a></li>
+                <li><a href="/Home/Autobiography">自傳</a></li>
+                <li><a href="/Home/Portfolio">作品集</a></li>
             </ul>
         </div>
         @RenderBody()
     </div>
-
-
-
-
+    
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

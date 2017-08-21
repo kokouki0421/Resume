@@ -92,36 +92,248 @@
     text-align: center;
     float: left;
     width: 23%;
-    /*opacity: .8;*/
     margin: 0 1% 0 1%;
     padding: 10px 0;
     background-color: black;
     font-size: 24px;
     color: white;
-    margin-bottom: 5px;
-    z-index:10;
+    z-index: 999999;
 }
 
 .profile-content, .education-content, .work-content, .skill-content {
     width: 23%;
     float: left;
-    opacity: .6;
     margin: 4% -38% 0 -24%;
-    background-color: black;
     color: white;
     line-height: 35px;
     position: relative;
-    z-index:-1;
-    
+    z-index: -1;
 }
-.aTitle{
-    width:auto;
-    height:25%;
-    background-color:white;
-    color:gray;
+
+    .profile-content::before, .education-content::before, .work-content::before, .skill-content::before {
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        float: left;
+        opacity: .6;
+        background-color: black;
+        z-index: -1;
+    }
+
+.aTitle {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    color: gray;
+    margin-top: -20px;
+    font-size: 34px;
+    padding-top: 2em;
+    text-align: center;
 }
-.aContent{
-    width:auto;
-    height:25%;
-    
+
+.bTitle {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    color: gray;
+    font-size: 34px;
+    text-align: center;
+    padding-top: 2em;
 }
+
+.aContent {
+    width: 100%;
+    height: auto;
+    color: white;
+    position: relative;
+    font-size: 18px;
+    padding: 10px;
+}
+
+    .aContent::before {
+        position: absolute;
+        background-color: black;
+        content: "";
+        opacity: .6;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        margin: -10px;
+    }
+
+.basic {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+    margin-top: -20px;
+}
+
+.pTitle1 {
+    width: 50%;
+    padding-top: 4em;
+    text-align: center;
+}
+
+.pTitle1-content {
+    width: 50%;
+    margin-left: 50%;
+    border-left: solid 1px gray;
+    margin-top: -7em;
+    text-align: center;
+}
+
+.basic p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.basic ul {
+    list-style: none;
+    line-height: 2em;
+}
+
+    .basic ul li {
+        margin-left: -3em;
+    }
+
+.basic-works {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+    .basic-works::before {
+        position: absolute;
+        content: "";
+        background-color: black;
+        opacity: .6;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .basic-works .works {
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        border: none;
+        outline: none;
+        font-size: 28px;
+        z-index: 999999;
+        margin-right: 50px;
+        font-weight: bold;
+        background-color: dimgray;
+        color: white;
+    }
+
+    .basic-works .works1 {
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        border: none;
+        outline: none;
+        font-size: 28px;
+        z-index: 999999;
+        margin-right: 50px;
+        font-weight: bold;
+        background-color: dimgray;
+        color: white;
+        margin-top: 45px;
+        margin-left: 20%;
+    }
+        .basic-works .works1:hover, .basic-works .works:hover {
+            cursor: pointer;
+            background-color: lightgray;
+            color: black;
+        }
+.other {
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+}
+
+.pTitle2 {
+    width: 50%;
+    padding-top: 5em;
+    text-align: center;
+}
+
+.pTitle2-content {
+    width: 50%;
+    margin-left: 50%;
+    border-left: solid 1px gray;
+    margin-top: -8.5em;
+    text-align: center;
+    height: auto;
+}
+
+.other p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.other ul {
+    list-style: none;
+    line-height: 2em;
+}
+
+    .other ul li {
+        margin-left: -3em;
+    }
+
+.other-works {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+    .other-works::before {
+        position: absolute;
+        content: "";
+        background-color: black;
+        opacity: .6;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .other-works .oWorks {
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        border: none;
+        outline: none;
+        font-size: 28px;
+        z-index: 999999;
+        margin-right: 50px;
+        font-weight: bold;
+        background-color: dimgray;
+        color: white;
+    }
+
+    .other-works .oWorks1 {
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        border: none;
+        outline: none;
+        font-size: 28px;
+        z-index: 999999;
+        margin-right: 50px;
+        font-weight: bold;
+        background-color: dimgray;
+        color: white;
+        margin-top: 45px;
+        margin-left: 12%;
+    }
+
+        .other-works .oWorks1:hover, .other-works .oWorks:hover {
+            cursor: pointer;
+            background-color: lightgray;
+            color: black;
+        }
