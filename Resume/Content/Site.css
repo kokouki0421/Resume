@@ -340,3 +340,356 @@
             background-color: lightgray;
             color: black;
         }
+@media screen and (max-width: 480px) {
+    body {
+    font-family: 微軟正黑體;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000 url(/Images/sun-2445461_1920.jpg) center center fixed no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.indexText1 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    top: 25%;
+    margin-left: 15%;
+}
+
+.indexText2 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    top: 40%;
+    margin-left: 30%;
+}
+
+#indexBtns {
+    position: relative;
+    margin-left: 10%;
+    top: 65%;
+}
+
+    #indexBtns .indexBtn {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        border: none;
+        outline: none;
+        font-size: 28px;
+        z-index: 999999;
+        float: left;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        opacity: .8;
+        font-weight: bold;
+        background-color: dimgray;
+        color: white;
+    }
+
+        #indexBtns .indexBtn:hover {
+            cursor: pointer;
+            background-color: lightgray;
+            color: black;
+        }
+
+.main-memu {
+    background-color: black;
+    width: auto;
+    color: white;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+    .main-memu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .main-memu ul li {
+            float: left;
+            width: 25%;
+        }
+
+            .main-memu ul li a {
+                display: block;
+                padding: 10px 0;
+                text-align: center;
+                font-size: 17px;
+                color: #fff;
+                text-decoration: none;
+            }
+
+                .main-memu ul li a:hover {
+                    background: gray;
+                }
+
+
+    .profile, .education, .work, .skill {
+        text-align: center;
+        float: left;
+        width: 100%;
+        margin: 0;
+        margin-top: 24px;
+        padding: 10px 0;
+        background-color: black;
+        font-size: 25px;
+        color: white;
+        z-index: 999999;
+    }
+
+    .profile-content, .education-content, .work-content, .skill-content {
+        width: 100%;
+        float: left;
+        margin-bottom: 37px;
+        margin: 0;
+        color: white;
+        line-height: 35px;
+        position: relative;
+        z-index: -1;
+        display: none;
+    }
+
+    .profile-content::before, .education-content::before, .work-content::before, .skill-content::before {
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        float: left;
+        opacity: .6;
+        background-color: black;
+        z-index: -1;
+    }
+
+.aTitle {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    color: black;
+    margin-top: -20px;
+    font-size: 34px;
+    padding-top: 1.5em;
+    text-align: center;
+    opacity: .8;
+}
+
+.bTitle {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    color: black;
+    font-size: 34px;
+    text-align: center;
+    opacity: .8;
+    padding-top: 1.5em;
+}
+
+.aContent {
+    width: 100%;
+    height: auto;
+    color: white;
+    position: relative;
+    font-size: 18px;
+    padding: 25px;
+    line-height:35px;
+}
+
+    .aContent::before {
+        position: absolute;
+        background-color: black;
+        content: "";
+        opacity: .6;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        margin: -25px;
+    }
+
+.basic {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+    margin-top: -20px;
+}
+
+.pTitle1 {
+    width: 50%;
+    padding-top: 4em;
+    text-align: center;
+}
+
+.pTitle1-content {
+    width: 50%;
+    margin-left: 50%;
+    border-left: solid 1px gray;
+    margin-top: -7em;
+    text-align: center;
+}
+
+.basic p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.basic ul {
+    list-style: none;
+    line-height: 2em;
+}
+
+    .basic ul li {
+        margin-left: -3em;
+    }
+
+    .basic-works {
+        position: relative;
+        width: 100%;
+        height: 140px;
+    }
+
+    .basic-works::before {
+        position: absolute;
+        content: "";
+        background-color: black;
+        opacity: .6;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+        .basic-works .works {
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            z-index: 999999;
+            margin-right: 0;
+            font-weight: bold;
+            background-color: dimgray;
+            color: white;
+            margin-top: 1em;
+            margin-left: 0;
+        }
+
+        .basic-works .works1 {
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            z-index: 999999;
+            margin-right: 0;
+            font-weight: bold;
+            background-color: dimgray;
+            color: white;
+            margin-top: 25px;
+            margin-left: 4%;
+        }
+        .basic-works .works1:hover, .basic-works .works:hover {
+            cursor: pointer;
+            background-color: lightgray;
+            color: black;
+        }
+.other {
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+}
+
+.pTitle2 {
+    width: 50%;
+    padding-top: 5em;
+    text-align: center;
+}
+
+.pTitle2-content {
+    width: 50%;
+    margin-left: 50%;
+    border-left: solid 1px gray;
+    margin-top: -8.5em;
+    text-align: center;
+    height: auto;
+}
+
+.other p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.other ul {
+    list-style: none;
+    line-height: 2em;
+}
+
+    .other ul li {
+        margin-left: -3em;
+    }
+
+.other-works {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+    .other-works::before {
+        position: absolute;
+        content: "";
+        background-color: black;
+        opacity: .6;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .other-works .oWorks {
+        border-radius: 50%;
+        width: 85px;
+        height: 85px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        z-index: 999999;
+        margin-left: 14px;
+        font-weight: bold;
+        background-color: dimgray;
+        color: white;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .other-works .oWorks1 {
+        border-radius: 50%;
+        width: 85px;
+        height: 85px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        z-index: 999999;
+        margin-right: 0;
+        font-weight: bold;
+        background-color: dimgray;
+        color: white;
+        margin-top:25px;
+        margin-left: 15%;
+    }
+
+        .other-works .oWorks1:hover, .other-works .oWorks:hover {
+            cursor: pointer;
+            background-color: lightgray;
+            color: black;
+        }
+}
