@@ -568,8 +568,8 @@
 
         .basic-works .works {
             border-radius: 50%;
-            width: 90px;
-            height: 90px;
+            width: 23%;
+            height: 4.3em;
             border: none;
             outline: none;
             font-size: 20px;
@@ -584,8 +584,8 @@
 
         .basic-works .works1 {
             border-radius: 50%;
-            width: 90px;
-            height: 90px;
+            width: 23%;
+            height: 4.3em;
             border: none;
             outline: none;
             font-size: 20px;
@@ -595,7 +595,7 @@
             background-color: dimgray;
             color: white;
             margin-top: 25px;
-            margin-left: 4%;
+            margin-left: 10px;
         }
         .basic-works .works1:hover, .basic-works .works:hover {
             cursor: pointer;
@@ -608,6 +608,7 @@
     background-color: white;
     color: black;
     opacity: 0.8;
+
 }
 
 .pTitle2 {
@@ -643,6 +644,7 @@
     position: relative;
     width: 100%;
     height: 250px;
+    text-align:center;
 }
 
     .other-works::before {
@@ -653,17 +655,18 @@
         width: 100%;
         height: 100%;
         z-index: -1;
+        left:0;
     }
 
     .other-works .oWorks {
         border-radius: 50%;
-        width: 85px;
-        height: 85px;
+        width: 23%;
+        height: 4.4em;
         border: none;
         outline: none;
         font-size: 20px;
         z-index: 999999;
-        margin-left: 14px;
+        margin-left: 2%;
         font-weight: bold;
         background-color: dimgray;
         color: white;
@@ -673,8 +676,8 @@
 
     .other-works .oWorks1 {
         border-radius: 50%;
-        width: 85px;
-        height: 85px;
+        width: 23%;
+        height: 4.4em;
         border: none;
         outline: none;
         font-size: 20px;
@@ -684,7 +687,7 @@
         background-color: dimgray;
         color: white;
         margin-top:25px;
-        margin-left: 15%;
+        margin-left: 0;
     }
 
         .other-works .oWorks1:hover, .other-works .oWorks:hover {
